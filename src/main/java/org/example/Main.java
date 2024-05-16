@@ -18,7 +18,7 @@ public class Main {
     static int live_status=0;
     public static void main(String[] args) {
         Timer timer = new Timer();
-        timer.schedule(new CheckLiveTask(), 0, 57000); // 每隔30s检查一次直播状态
+        timer.schedule(new CheckLiveTask(), 0, 57000); // 每隔数秒检查一次直播状态
     }
 
     static class CheckLiveTask extends TimerTask {
